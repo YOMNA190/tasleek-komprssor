@@ -3,721 +3,779 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>المتخصص | خدمات الكمبروسور الفورية بالرياض</title>
-    <!-- Google Fonts - خط حديث وقوي -->
+    
+    <!-- ========== SEO أساسي ========== -->
+    <title>الأمثل للصرف الصحي | خدمات فورية بالرياض | 0533143974</title>
+    <meta name="description" content="الأمثل: أفضل شركة تسليك مجاري بالرياض، شفط بيارات بالكمبروسر، تنظيف خزانات، كشف تسربات بدون تكسير، تركيب سباكة. خدمة 24 ساعة ووصول خلال 30 دقيقة. ضمان 30 يوم. اتصل الآن 0533143974.">
+    <meta name="keywords" content="تسليك مجاري بالرياض, شفط بيارات بالكمبروسر, تنظيف خزانات, تركيب سباكة, كشف تسربات, فتح انسداد, شركة تسليك مجاري, الأمثل">
+    <meta name="author" content="الأمثل">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://example.com"> <!-- استبدلي بالرابط النهائي -->
+
+    <!-- Google tag (gtag.js) - مثال للتتبع (استبدلي بالمعرف الخاص بك) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-XXXXXXXXXX');
+    </script>
+
+    <!-- Event snippet للاتصال -->
+    <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-XXXXXXXXXX/XXXXXXXXXX', // استبدلي
+          'value': 1.0,
+          'currency': 'SAR',
+          'event_callback': callback
+      });
+      return false;
+    }
+    </script>
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="الأمثل - خدمات الصرف الصحي المتكاملة بالرياض">
+    <meta property="og:description" content="تسليك مجاري، شفط بيارات، تنظيف خزانات، تركيب سباكة، كشف تسربات بأحدث تقنيات الكمبروسر. اتصل بنا 0533143974.">
+    <meta property="og:image" content="https://example.com/assets/images/og-image.jpg"> <!-- استبدلي -->
+    <meta property="og:url" content="https://example.com">
+    <meta property="og:type" content="website">
+    
+    <!-- Structured Data - خدمات سباكة -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "PlumbingService",
+      "name": "الأمثل",
+      "description": "خدمات الصرف الصحي المتكاملة بالرياض - تسليك مجاري، شفط بيارات، تنظيف خزانات، تركيب سباكة، كشف تسربات.",
+      "url": "https://example.com",
+      "telephone": "+966533143974",
+      "priceRange": "SAR",
+      "areaServed": {
+        "@type": "City",
+        "name": "الرياض"
+      },
+      "openingHours": "Mo-Su 00:00-23:59"
+    }
+    </script>
+    
+    <!-- خطوط وأيقونات -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700;900&display=swap" rel="stylesheet">
-    <!-- Font Awesome 6 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        :root {
+            --primary: #D32F2F;      /* أحمر قوي */
+            --primary-light: #FFCDD2;
+            --primary-dark: #B71C1C;
+            --accent: #FFA000;        /* ذهبي داكن */
+            --bg-light: #F5F5F6;
+            --text-dark: #1E1E2F;
+            --text-gray: #5F5F6B;
+            --border-light: #E0E0E0;
+            --shadow-sm: 0 4px 6px -1px rgba(0,0,0,0.1);
+            --shadow-md: 0 10px 25px -5px rgba(0,0,0,0.1);
+            --shadow-lg: 0 25px 50px -12px rgba(0,0,0,0.2);
         }
-
         body {
-            font-family: 'Almarai', sans-serif;
-            background: #0a0f1e;
-            color: #ffffff;
-            line-height: 1.6;
+            font-family: 'Tajawal', sans-serif;
+            background-color: #ffffff;
+            color: var(--text-dark);
+            scroll-behavior: smooth;
             overflow-x: hidden;
         }
-
-        /* شريط أخبار علوي */
-        .news-ticker {
-            background: #f9b81b;
-            color: #0a0f1e;
-            padding: 12px 20px;
-            font-weight: 900;
-            font-size: 1.2rem;
-            text-align: center;
-            letter-spacing: 1px;
-            box-shadow: 0 4px 15px rgba(249, 184, 27, 0.4);
-            border-bottom: 3px solid #ffaa00;
-            text-transform: uppercase;
-        }
-
-        .news-ticker i {
-            margin-left: 10px;
-            font-size: 1.5rem;
-            animation: ring 2s infinite;
-        }
-
-        @keyframes ring {
-            0% { transform: rotate(0); }
-            10% { transform: rotate(15deg); }
-            20% { transform: rotate(-15deg); }
-            30% { transform: rotate(10deg); }
-            40% { transform: rotate(-10deg); }
-            50% { transform: rotate(5deg); }
-            60% { transform: rotate(0); }
-            100% { transform: rotate(0); }
-        }
-
-        /* الهيدر الرئيسي */
-        .hero {
-            background: linear-gradient(135deg, #0f1a2f 0%, #1b2b45 100%);
-            padding: 60px 20px 80px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -20%;
-            width: 600px;
-            height: 600px;
-            background: radial-gradient(circle, rgba(249,184,27,0.2) 0%, transparent 70%);
-            border-radius: 50%;
-            z-index: 0;
-        }
-
-        .hero::after {
-            content: '';
-            position: absolute;
-            bottom: -30%;
-            right: -10%;
-            width: 500px;
-            height: 500px;
-            background: radial-gradient(circle, rgba(0,180,255,0.15) 0%, transparent 70%);
-            border-radius: 50%;
-            z-index: 0;
-        }
-
-        .hero-content {
-            max-width: 1200px;
+        .container-custom {
+            max-width: 1280px;
             margin: 0 auto;
-            position: relative;
-            z-index: 2;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-            align-items: center;
+            padding: 0 1.5rem;
         }
-
-        .hero-text h1 {
-            font-size: 3.8rem;
+        
+        /* أنيميشنات */
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeRight {
+            from { opacity: 0; transform: translateX(-30px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        .animate-fade-up {
+            animation: fadeUp 0.8s ease forwards;
+        }
+        .animate-fade-right {
+            animation: fadeRight 0.8s ease forwards;
+        }
+        
+        /* عناصر تظهر عند التمرير */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s;
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* بطاقات الخدمات */
+        .service-card {
+            background: white;
+            border: 1px solid var(--border-light);
+            border-radius: 2rem;
+            overflow: hidden;
+            transition: all 0.4s;
+            box-shadow: var(--shadow-sm);
+        }
+        .service-card:hover {
+            transform: translateY(-12px) scale(1.02);
+            border-color: var(--primary);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        /* شعار */
+        .logo {
+            font-size: 2rem;
             font-weight: 900;
-            line-height: 1.2;
-            margin-bottom: 20px;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
         }
-
-        .hero-text h1 span {
-            color: #f9b81b;
-            text-shadow: 0 0 15px rgba(249,184,27,0.5);
-            display: inline-block;
-            animation: glow 2s infinite;
-        }
-
-        @keyframes glow {
-            0% { text-shadow: 0 0 5px #f9b81b; }
-            50% { text-shadow: 0 0 25px #f9b81b; }
-            100% { text-shadow: 0 0 5px #f9b81b; }
-        }
-
-        .hero-text .subhead {
-            font-size: 1.6rem;
-            margin-bottom: 25px;
-            color: #e0e0e0;
-        }
-
-        .hero-text .badges {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-            margin-bottom: 35px;
-        }
-
-        .badge-item {
-            background: rgba(255,255,255,0.1);
-            backdrop-filter: blur(10px);
-            padding: 12px 25px;
-            border-radius: 50px;
+        
+        /* أزرار */
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            color: white;
+            padding: 0.75rem 2rem;
+            border-radius: 60px;
             font-weight: 700;
-            border: 1px solid rgba(249,184,27,0.5);
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            box-shadow: 0 8px 20px rgba(211,47,47,0.3);
+        }
+        .btn-primary:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 30px rgba(211,47,47,0.4);
+        }
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+            padding: 0.7rem 2rem;
+            border-radius: 60px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        .btn-outline:hover {
+            background: var(--primary);
+            color: white;
+        }
+        .btn-whatsapp {
+            background: #25D366;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 60px;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s;
+        }
+        .btn-whatsapp:hover {
+            background: #20b859;
+            transform: scale(1.05);
+        }
+        
+        /* واتساب عائم */
+        .floating-whatsapp {
+            position: fixed;
+            bottom: 25px;
+            left: 25px;
+            width: 65px;
+            height: 65px;
+            background: #25D366;
+            border-radius: 50%;
             display: flex;
             align-items: center;
-            gap: 10px;
-            font-size: 1.2rem;
+            justify-content: center;
+            color: white;
+            font-size: 2rem;
+            box-shadow: 0 4px 20px rgba(37,211,102,0.5);
+            z-index: 99;
+            transition: all 0.3s;
+            animation: bounce 2s infinite;
         }
-
-        .badge-item i {
-            color: #f9b81b;
-            font-size: 1.5rem;
+        @keyframes bounce {
+            0%,100%{ transform: translateY(0); }
+            50%{ transform: translateY(-8px); }
         }
-
-        .hero-stats {
-            display: flex;
-            gap: 30px;
-            margin: 40px 0;
+        .floating-whatsapp:hover {
+            transform: scale(1.1) rotate(5deg);
         }
-
-        .stat {
-            text-align: center;
-        }
-
-        .stat-number {
+        
+        /* عنوان القسم */
+        .section-title {
+            position: relative;
+            display: inline-block;
             font-size: 2.5rem;
             font-weight: 900;
-            color: #f9b81b;
+            margin-bottom: 2rem;
         }
-
-        .stat-label {
-            font-size: 1rem;
-            color: #aaa;
-        }
-
-        .hero-buttons {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
-        .btn-primary {
-            background: #f9b81b;
-            color: #0a0f1e;
-            padding: 18px 40px;
-            border-radius: 60px;
-            font-weight: 900;
-            font-size: 1.5rem;
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            gap: 15px;
-            transition: 0.3s;
-            box-shadow: 0 10px 25px rgba(249,184,27,0.5);
-            border: 2px solid transparent;
-        }
-
-        .btn-primary:hover {
-            background: transparent;
-            color: #f9b81b;
-            border-color: #f9b81b;
-            transform: scale(1.05);
-            box-shadow: 0 15px 35px rgba(249,184,27,0.7);
-        }
-
-        .btn-secondary {
-            background: transparent;
-            color: #fff;
-            padding: 18px 40px;
-            border-radius: 60px;
-            font-weight: 700;
-            font-size: 1.3rem;
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            border: 2px solid #f9b81b;
-            transition: 0.3s;
-        }
-
-        .btn-secondary:hover {
-            background: #f9b81b;
-            color: #0a0f1e;
-            transform: scale(1.05);
-        }
-
-        .hero-image {
-            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><circle cx="100" cy="100" r="80" fill="%23f9b81b" opacity="0.1"/><circle cx="120" cy="80" r="50" fill="%23f9b81b" opacity="0.15"/></svg>');
-            background-size: cover;
-            min-height: 400px;
-            border-radius: 30px;
-            box-shadow: 0 25px 50px -8px rgba(0,0,0,0.6);
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .hero-image-inner {
-            background: rgba(255,255,255,0.05);
-            backdrop-filter: blur(15px);
-            padding: 40px;
-            border-radius: 30px;
-            border: 1px solid rgba(249,184,27,0.3);
-            text-align: center;
-            width: 90%;
-        }
-
-        .hero-image-inner i {
-            font-size: 5rem;
-            color: #f9b81b;
-            margin-bottom: 20px;
-        }
-
-        .hero-image-inner h3 {
-            font-size: 2rem;
-            margin-bottom: 10px;
-        }
-
-        .hero-image-inner p {
-            color: #ccc;
-        }
-
-        /* قسم الخدمات */
-        .services {
-            max-width: 1200px;
-            margin: 80px auto;
-            padding: 0 20px;
-        }
-
-        .section-header {
-            text-align: center;
-            margin-bottom: 60px;
-        }
-
-        .section-header h2 {
-            font-size: 3rem;
-            font-weight: 900;
-            color: #f9b81b;
-            margin-bottom: 15px;
-        }
-
-        .section-header p {
-            font-size: 1.3rem;
-            color: #aaa;
-        }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-        }
-
-        .service-card {
-            background: #1b2b45;
-            padding: 40px 25px;
-            border-radius: 30px;
-            text-align: center;
-            transition: 0.3s;
-            border: 1px solid #2a3d5e;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-        }
-
-        .service-card:hover {
-            transform: translateY(-15px);
-            border-color: #f9b81b;
-            box-shadow: 0 20px 40px rgba(249,184,27,0.3);
-        }
-
-        .service-card i {
-            font-size: 4rem;
-            color: #f9b81b;
-            margin-bottom: 20px;
-        }
-
-        .service-card h3 {
-            font-size: 2rem;
-            margin-bottom: 15px;
-        }
-
-        .service-card p {
-            color: #bbb;
-            margin-bottom: 25px;
-        }
-
-        .service-link {
-            color: #f9b81b;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 1.2rem;
-            display: inline-flex;
-            align-items: center;
-            gap: 5px;
-        }
-
-        .service-link:hover {
-            gap: 10px;
-        }
-
-        /* شريط الإحصائيات */
-        .stats-bar {
-            background: linear-gradient(145deg, #0f1a2f, #1d2e47);
-            padding: 60px 20px;
-            text-align: center;
-            border-top: 3px solid #f9b81b;
-            border-bottom: 3px solid #f9b81b;
-        }
-
-        .stats-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            gap: 40px;
-        }
-
-        .stat-item {
-            flex: 1 1 200px;
-        }
-
-        .stat-item .number {
-            font-size: 4rem;
-            font-weight: 900;
-            color: #f9b81b;
-            line-height: 1;
-        }
-
-        .stat-item .label {
-            font-size: 1.3rem;
-            color: #ddd;
-        }
-
-        /* شهادات العملاء */
-        .testimonials {
-            max-width: 1200px;
-            margin: 80px auto;
-            padding: 0 20px;
-        }
-
-        .testimonials-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-
-        .testimonial-card {
-            background: #1b2b45;
-            padding: 30px;
-            border-radius: 30px;
-            border: 1px solid #2a3d5e;
-            transition: 0.3s;
-        }
-
-        .testimonial-card:hover {
-            border-color: #f9b81b;
-        }
-
-        .testimonial-card i {
-            color: #f9b81b;
-            font-size: 2rem;
-            margin-bottom: 15px;
-            opacity: 0.7;
-        }
-
-        .testimonial-text {
-            font-size: 1.1rem;
-            margin-bottom: 20px;
-            color: #ddd;
-        }
-
-        .testimonial-author {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-
-        .author-avatar {
-            width: 60px;
-            height: 60px;
-            background: #2a3d5e;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 900;
-            font-size: 1.5rem;
-            color: #f9b81b;
-            border: 2px solid #f9b81b;
-        }
-
-        .author-info h4 {
-            font-size: 1.3rem;
-        }
-
-        .author-info p {
-            color: #aaa;
-        }
-
-        /* قسم الاتصال */
-        .contact-cta {
-            background: #0f1a2f;
-            padding: 80px 20px;
-            text-align: center;
-            border-radius: 60px 60px 0 0;
-            margin-top: 80px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .contact-cta::before {
+        .section-title::after {
             content: '';
             position: absolute;
-            top: -30%;
-            left: -20%;
-            width: 600px;
-            height: 600px;
-            background: radial-gradient(circle, rgba(249,184,27,0.15) 0%, transparent 70%);
-            border-radius: 50%;
+            bottom: -10px;
+            right: 0;
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            border-radius: 4px;
         }
-
-        .contact-cta h2 {
-            font-size: 3.5rem;
-            font-weight: 900;
-            margin-bottom: 20px;
+        .section-title.center::after {
+            right: 50%;
+            transform: translateX(50%);
         }
-
-        .contact-cta h2 span {
-            color: #f9b81b;
-        }
-
-        .contact-cta .phone-big {
-            font-size: 4rem;
-            font-weight: 900;
-            background: #1b2b45;
-            display: inline-block;
-            padding: 20px 60px;
-            border-radius: 80px;
-            margin: 40px 0;
-            border: 3px solid #f9b81b;
-            box-shadow: 0 0 40px rgba(249,184,27,0.5);
-            transition: 0.3s;
-        }
-
-        .contact-cta .phone-big:hover {
-            transform: scale(1.05);
-            background: #f9b81b;
-            color: #0a0f1e;
-        }
-
-        .contact-cta .phone-big i {
-            margin-left: 15px;
-        }
-
-        .whatsapp-btn {
-            background: #25D366;
-            color: #fff;
-            padding: 20px 60px;
-            border-radius: 80px;
-            font-size: 2rem;
-            font-weight: 900;
-            text-decoration: none;
+        
+        /* شارة */
+        .badge {
+            background: var(--primary-light);
+            color: var(--primary-dark);
+            padding: 0.5rem 1.2rem;
+            border-radius: 50px;
+            font-weight: 700;
             display: inline-flex;
             align-items: center;
-            gap: 15px;
-            transition: 0.3s;
-            margin-top: 20px;
-            border: 3px solid transparent;
+            gap: 0.5rem;
+            border: 1px solid rgba(211,47,47,0.2);
         }
-
-        .whatsapp-btn:hover {
-            background: transparent;
-            border-color: #25D366;
-            color: #25D366;
-        }
-
-        /* الفوتر */
-        footer {
-            background: #03060b;
-            color: #888;
-            text-align: center;
-            padding: 30px;
-            font-size: 1rem;
-        }
-
-        /* استجابة للجوال */
-        @media (max-width: 768px) {
-            .hero-content {
-                grid-template-columns: 1fr;
-                text-align: center;
-            }
-            .hero-text h1 {
-                font-size: 2.5rem;
-            }
-            .hero-stats {
-                justify-content: center;
-            }
-            .hero-buttons {
-                justify-content: center;
-            }
-            .badges {
-                justify-content: center;
-            }
-            .phone-big {
-                font-size: 2rem !important;
-                padding: 15px 30px !important;
-            }
-            .whatsapp-btn {
-                font-size: 1.5rem;
-                padding: 15px 30px;
-            }
+        
+        @media (max-width: 640px) {
+            .section-title { font-size: 2rem; }
         }
     </style>
 </head>
 <body>
-    <div class="news-ticker">
-        <i class="fas fa-bolt"></i> خدمة فورية 24 ساعة - وصول خلال 30 دقيقة - ضمان 100% على جميع الأعمال <i class="fas fa-shield-alt"></i>
-    </div>
 
-    <section class="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1>أقوى <span>كمبروسور</span> في الرياض<br>لخدمات الصرف الصحي</h1>
-                <p class="subhead">تسليك مجاري - شفط بيارات - تنظيف خزانات بكفاءة عالية</p>
-                
-                <div class="badges">
-                    <div class="badge-item"><i class="fas fa-clock"></i> وصول 30 دقيقة</div>
-                    <div class="badge-item"><i class="fas fa-shield-alt"></i> ضمان 30 يوم</div>
-                    <div class="badge-item"><i class="fas fa-tools"></i> كمبروسور ألماني</div>
-                </div>
+    <!-- واتساب عائم -->
+    <a href="https://wa.me/966533143974" target="_blank" class="floating-whatsapp" aria-label="تواصل عبر واتساب">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
-                <div class="hero-stats">
-                    <div class="stat">
-                        <div class="stat-number">+1500</div>
-                        <div class="stat-label">عميل سعيد</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-number">15+</div>
-                        <div class="stat-label">سنة خبرة</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-number">30'</div>
-                        <div class="stat-label">متوسط الوصول</div>
-                    </div>
-                </div>
-
-                <div class="hero-buttons">
-                    <a href="tel:+966533143974" class="btn-primary"><i class="fas fa-phone-alt"></i> +966 53 314 3974</a>
-                    <a href="https://wa.me/966533143974" target="_blank" class="btn-secondary"><i class="fab fa-whatsapp"></i> واتساب فوري</a>
-                </div>
-            </div>
-
-            <div class="hero-image">
-                <div class="hero-image-inner">
-                    <i class="fas fa-truck-pickup"></i>
-                    <h3>أسطول كمبروسور حديث</h3>
-                    <p>أحدث أجهزة الضغط العالي 4000 PSI</p>
-                    <div style="margin-top: 20px;">
-                        <i class="fas fa-star" style="color: #f9b81b;"></i>
-                        <i class="fas fa-star" style="color: #f9b81b;"></i>
-                        <i class="fas fa-star" style="color: #f9b81b;"></i>
-                        <i class="fas fa-star" style="color: #f9b81b;"></i>
-                        <i class="fas fa-star" style="color: #f9b81b;"></i>
-                        <span style="display: block; margin-top: 10px;">4.9 (850+ تقييم)</span>
-                    </div>
-                </div>
+    <!-- الهيدر -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-[#E2E8F0] py-3">
+        <div class="container-custom flex justify-between items-center">
+            <a href="#home" class="logo text-2xl">الأمثل</a>
+            <nav class="hidden md:flex gap-8 font-bold">
+                <a href="#home" class="hover:text-primary transition">الرئيسية</a>
+                <a href="#services" class="hover:text-primary transition">الخدمات</a>
+                <a href="#features" class="hover:text-primary transition">مميزاتنا</a>
+                <a href="#testimonials" class="hover:text-primary transition">آراء العملاء</a>
+                <a href="#contact" class="hover:text-primary transition">اتصل بنا</a>
+            </nav>
+            <div class="flex gap-3">
+                <a href="https://wa.me/966533143974" target="_blank" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-xl flex items-center gap-2 transition shadow-md">
+                    <i class="fab fa-whatsapp"></i><span class="hidden sm:inline">واتساب</span>
+                </a>
+                <button onclick="return gtag_report_conversion('tel:+966533143974')" class="btn-primary text-sm md:text-base py-2 px-4">
+                    <i class="fas fa-phone"></i><span class="hidden sm:inline">اتصل الآن</span>
+                </button>
             </div>
         </div>
-    </section>
+    </header>
 
-    <section class="services">
-        <div class="section-header">
-            <h2>خدماتنا المتكاملة</h2>
-            <p>نحن الأفضل في الرياض بفضل تقنيات الكمبروسور الحديثة</p>
-        </div>
-        <div class="services-grid">
-            <div class="service-card">
-                <i class="fas fa-toilet"></i>
-                <h3>تسليك مجاري</h3>
-                <p>بأحدث أجهزة الضغط العالي التي تزيل أصعب الانسدادات وجذور الأشجار بدون تكسير.</p>
-                <a href="tel:+966533143974" class="service-link">اطلب الخدمة <i class="fas fa-arrow-left"></i></a>
-            </div>
-            <div class="service-card">
-                <i class="fas fa-oil-can"></i>
-                <h3>شفط بيارات</h3>
-                <p>بكمبروسور بقوة 5000 لتر/دقيقة - شفط سريع وتعقيم كامل بدون وايتات تقليدية.</p>
-                <a href="tel:+966533143974" class="service-link">اطلب الخدمة <i class="fas fa-arrow-left"></i></a>
-            </div>
-            <div class="service-card">
-                <i class="fas fa-water"></i>
-                <h3>تنظيف خزانات</h3>
-                <p>بمواد معتمدة من وزارة الصحة وشهادة صحية بعد التنظيف للخزانات الأرضية والعلوية.</p>
-                <a href="tel:+966533143974" class="service-link">اطلب الخدمة <i class="fas fa-arrow-left"></i></a>
-            </div>
-            <div class="service-card">
-                <i class="fas fa-search"></i>
-                <h3>كشف تسربات</h3>
-                <p>بأجهزة إلكترونية حديثة لتحديد مكان التسرب بدقة متناهية بدون أي تكسير.</p>
-                <a href="tel:+966533143974" class="service-link">اطلب الخدمة <i class="fas fa-arrow-left"></i></a>
-            </div>
-        </div>
-    </section>
-
-    <div class="stats-bar">
-        <div class="stats-container">
-            <div class="stat-item">
-                <div class="number">+3500</div>
-                <div class="label">مشروع ناجح</div>
-            </div>
-            <div class="stat-item">
-                <div class="number">98%</div>
-                <div class="label">رضا العملاء</div>
-            </div>
-            <div class="stat-item">
-                <div class="number">15</div>
-                <div class="label">سنوات خبرة</div>
-            </div>
-            <div class="stat-item">
-                <div class="number">30'</div>
-                <div class="label">زمن الاستجابة</div>
-            </div>
-        </div>
-    </div>
-
-    <section class="testimonials">
-        <div class="section-header">
-            <h2>ماذا قال عملاؤنا؟</h2>
-            <p>آراء حقيقية من أشخاص وثقوا بنا</p>
-        </div>
-        <div class="testimonials-grid">
-            <div class="testimonial-card">
-                <i class="fas fa-quote-right"></i>
-                <p class="testimonial-text">"فكوا لي انسداد المجاري في أقل من ساعة، شغل نظيف وسريع وأسعارهم مناسبة جداً. أنصح فيهم وبقوة."</p>
-                <div class="testimonial-author">
-                    <div class="author-avatar">أ.ن</div>
-                    <div class="author-info">
-                        <h4>أبو ناصر</h4>
-                        <p>حي الصحافة</p>
+    <!-- قسم الرئيسية -->
+    <section id="home" class="pt-28 pb-16 min-h-screen flex items-center" style="background: linear-gradient(135deg, #FBE9E7 0%, #FFFFFF 100%);">
+        <div class="container-custom">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="animate-fade-up">
+                    <div class="badge mb-4">
+                        <i class="fas fa-bolt"></i> تقنية الكمبروسر الألماني - ضمان 30 يوم
+                    </div>
+                    <h1 class="text-5xl md:text-6xl font-black leading-tight mb-6">
+                        الأمثل لخدمات <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">الصرف الصحي بالرياض</span>
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-8">⚡ تسليك مجاري • شفط بيارات • تنظيف خزانات • كشف تسربات | وصول 30 دقيقة | خدمة 24 ساعة | أسعار منافسة</p>
+                    <div class="flex flex-wrap gap-4">
+                        <button onclick="return gtag_report_conversion('tel:+966533143974')" class="btn-primary text-lg">
+                            <i class="fas fa-phone-volume"></i> اطلب الخدمة الفورية
+                        </button>
+                        <a href="#services" class="btn-outline text-lg">استعرض خدماتنا</a>
+                    </div>
+                    <div class="flex items-center gap-4 mt-8">
+                        <div class="flex -space-x-2">
+                            <div class="w-10 h-10 bg-primary-light rounded-full border-2 border-white flex items-center justify-center"><i class="fas fa-user text-primary-dark"></i></div>
+                            <div class="w-10 h-10 bg-primary-light rounded-full border-2 border-white flex items-center justify-center"><i class="fas fa-user text-primary-dark"></i></div>
+                            <div class="w-10 h-10 bg-primary-light rounded-full border-2 border-white flex items-center justify-center"><i class="fas fa-user text-primary-dark"></i></div>
+                        </div>
+                        <span class="text-gray-600"><span class="font-bold text-dark">+3000</span> عميل يثق بنا</span>
                     </div>
                 </div>
-            </div>
-            <div class="testimonial-card">
-                <i class="fas fa-quote-right"></i>
-                <p class="testimonial-text">"شفطوا لي البيارة خلال نص ساعة فقط، وتعامل راقي وفريق محترف. شكراً لكم."</p>
-                <div class="testimonial-author">
-                    <div class="author-avatar">ف.ع</div>
-                    <div class="author-info">
-                        <h4>فهد العتيبي</h4>
-                        <p>حي الياسمين</p>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial-card">
-                <i class="fas fa-quote-right"></i>
-                <p class="testimonial-text">"نظفوا الخزان الأرضي وأعطوني شهادة صحية، صار الماء نقي تماماً. خدمة ممتازة."</p>
-                <div class="testimonial-author">
-                    <div class="author-avatar">أ.م</div>
-                    <div class="author-info">
-                        <h4>أم محمد</h4>
-                        <p>حي النرجس</p>
+                <div class="animate-fade-right">
+                    <div class="bg-white p-8 rounded-3xl shadow-xl border border-gray-200 space-y-6">
+                        <div class="flex items-center gap-4 p-4 hover:bg-red-50 rounded-2xl transition">
+                            <div class="w-14 h-14 bg-gradient-to-br from-primary to-accent rounded-2xl flex items-center justify-center">
+                                <i class="fas fa-clock text-white text-2xl"></i>
+                            </div>
+                            <div><h3 class="font-bold text-xl">خدمة 24 ساعة</h3><p class="text-gray-600">طوال أيام الأسبوع</p></div>
+                        </div>
+                        <div class="flex items-center gap-4 p-4 hover:bg-red-50 rounded-2xl transition">
+                            <div class="w-14 h-14 bg-gradient-to-br from-primary to-accent rounded-2xl flex items-center justify-center">
+                                <i class="fas fa-truck text-white text-2xl"></i>
+                            </div>
+                            <div><h3 class="font-bold text-xl">وصول سريع</h3><p class="text-gray-600">خلال 30 دقيقة</p></div>
+                        </div>
+                        <div class="flex items-center gap-4 p-4 hover:bg-red-50 rounded-2xl transition">
+                            <div class="w-14 h-14 bg-gradient-to-br from-primary to-accent rounded-2xl flex items-center justify-center">
+                                <i class="fas fa-shield-alt text-white text-2xl"></i>
+                            </div>
+                            <div><h3 class="font-bold text-xl">ضمان 30 يوم</h3><p class="text-gray-600">على جميع الخدمات</p></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="contact-cta">
-        <h2>خدمتك <span>تبدأ</span> بمكالمة</h2>
-        <div class="phone-big">
-            <i class="fas fa-phone-alt"></i> +966 53 314 3974
+    <!-- روابط سريعة للخدمات (8 خدمات) -->
+    <section class="py-8">
+        <div class="container-custom">
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-4">
+                <a href="#service-1" class="bg-white border border-gray-200 p-5 rounded-2xl text-center hover:border-primary hover:shadow-lg transition group">
+                    <div class="text-4xl mb-2 group-hover:scale-110 transition">🚰</div>
+                    <div class="font-bold text-primary text-sm">تسليك مجاري</div>
+                </a>
+                <a href="#service-2" class="bg-white border border-gray-200 p-5 rounded-2xl text-center hover:border-primary hover:shadow-lg transition group">
+                    <div class="text-4xl mb-2 group-hover:scale-110 transition">🛢️</div>
+                    <div class="font-bold text-primary text-sm">شفط بيارات</div>
+                </a>
+                <a href="#service-3" class="bg-white border border-gray-200 p-5 rounded-2xl text-center hover:border-primary hover:shadow-lg transition group">
+                    <div class="text-4xl mb-2 group-hover:scale-110 transition">💧</div>
+                    <div class="font-bold text-primary text-sm">تنظيف خزانات</div>
+                </a>
+                <a href="#service-4" class="bg-white border border-gray-200 p-5 rounded-2xl text-center hover:border-primary hover:shadow-lg transition group">
+                    <div class="text-4xl mb-2 group-hover:scale-110 transition">🔧</div>
+                    <div class="font-bold text-primary text-sm">تركيب سباكة</div>
+                </a>
+                <a href="#service-5" class="bg-white border border-gray-200 p-5 rounded-2xl text-center hover:border-primary hover:shadow-lg transition group">
+                    <div class="text-4xl mb-2 group-hover:scale-110 transition">🔍</div>
+                    <div class="font-bold text-primary text-sm">كشف تسربات</div>
+                </a>
+                <a href="#service-6" class="bg-white border border-gray-200 p-5 rounded-2xl text-center hover:border-primary hover:shadow-lg transition group">
+                    <div class="text-4xl mb-2 group-hover:scale-110 transition">🧹</div>
+                    <div class="font-bold text-primary text-sm">فتح انسداد</div>
+                </a>
+                <a href="#service-7" class="bg-white border border-gray-200 p-5 rounded-2xl text-center hover:border-primary hover:shadow-lg transition group">
+                    <div class="text-4xl mb-2 group-hover:scale-110 transition">🚨</div>
+                    <div class="font-bold text-primary text-sm">طوارئ 24 س</div>
+                </a>
+                <a href="#service-8" class="bg-white border border-gray-200 p-5 rounded-2xl text-center hover:border-primary hover:shadow-lg transition group">
+                    <div class="text-4xl mb-2 group-hover:scale-110 transition">📞</div>
+                    <div class="font-bold text-primary text-sm">اتصل بفني</div>
+                </a>
+            </div>
         </div>
-        <div>
-            <a href="https://wa.me/966533143974" target="_blank" class="whatsapp-btn">
-                <i class="fab fa-whatsapp"></i> تواصل واتساب
-            </a>
-        </div>
-        <p style="margin-top: 40px; color: #aaa;">متوفرون 24 ساعة - 7 أيام - خدمة طارئة فورية</p>
     </section>
 
-    <footer>
-        <p>© 2026 جميع الحقوق محفوظة - خدمات الكمبروسور المتخصصة بالرياض</p>
-        <p style="margin-top: 10px;">رقم الترخيص: 987654321 | الضمان يغطي جميع الخدمات</p>
+    <!-- الخدمات التفصيلية -->
+    <section id="services" class="py-16">
+        <div class="container-custom">
+            <div class="text-center reveal">
+                <h2 class="section-title center">خدمات الأمثل المتخصصة في الرياض</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">نوفر أحدث تقنيات الكمبروسر وخدمات السباكة بضمان 30 يوم</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+                <!-- 1. تسليك مجاري -->
+                <div id="service-1" class="service-card reveal">
+                    <img src="https://via.placeholder.com/400x200/FFCDD2/1E1E2F?text=تسليك+مجاري" alt="تسليك مجاري" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-3">🚰 تسليك مجاري فوري</h3>
+                        <p class="text-gray-600 mb-4">نستخدم أحدث أجهزة الضغط العالي 4000 PSI لإزالة أصعب الانسدادات والدهون والجذور بدون تكسير. وصول سريع 30 دقيقة.</p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-center gap-2"><i class="fas fa-check-circle text-primary"></i> ضغط ماء 4000 PSI</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check-circle text-primary"></i> إزالة الدهون والجذور</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check-circle text-primary"></i> ضمان 30 يوم</li>
+                        </ul>
+                        <div class="flex flex-col sm:flex-row gap-2 mt-4">
+                            <button onclick="return gtag_report_conversion('tel:+966533143974')" class="btn-primary flex-1 py-3 text-sm"><i class="fas fa-phone"></i> اتصال</button>
+                            <a href="https://wa.me/966533143974" target="_blank" class="btn-whatsapp flex-1 py-3 text-sm"><i class="fab fa-whatsapp"></i> واتساب</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. شفط بيارات بالكمبروسر -->
+                <div id="service-2" class="service-card reveal">
+                    <img src="https://via.placeholder.com/400x200/FFE0B2/1E1E2F?text=شفط+بيارات" alt="شفط بيارات" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-3">🛢️ شفط بيارات بالكمبروسر</h3>
+                        <p class="text-gray-600 mb-4">تقنية الكمبروسر تتيح شفط البيارات بسرعة فائقة (5000 لتر/د) بدون وايتات تقليدية، مع تعقيم كامل للبيارة.</p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-center gap-2"><i class="fas fa-check-circle text-primary"></i> شفط بقوة 5000 لتر/د</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check-circle text-primary"></i> تعقيم بعد الشفط</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check-circle text-primary"></i> لا حاجة لوايتات</li>
+                        </ul>
+                        <div class="flex flex-col sm:flex-row gap-2 mt-4">
+                            <button onclick="return gtag_report_conversion('tel:+966533143974')" class="btn-primary flex-1 py-3 text-sm"><i class="fas fa-phone"></i> اتصال</button>
+                            <a href="https://wa.me/966533143974" target="_blank" class="btn-whatsapp flex-1 py-3 text-sm"><i class="fab fa-whatsapp"></i> واتساب</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. تنظيف خزانات -->
+                <div id="service-3" class="service-card reveal">
+                    <img src="https://via.placeholder.com/400x200/C8E6C9/1E1E2F?text=تنظيف+خزانات" alt="تنظيف خزانات" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-3">💧 تنظيف وتعقيم الخزانات</h3>
+                        <p class="text-gray-600 mb-4">نستخدم مواد معتمدة من وزارة الصحة ونقدم شهادة صحية. تنظيف شامل للخزانات الأرضية والعلوية.</p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-center gap-2"><i class="fas fa-check-circle text-primary"></i> شهادة صحية</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check-circle text-primary"></i> تعقيم كامل</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check-circle text-primary"></i> خزانات أرضية وعلوية</li>
+                        </ul>
+                        <div class="flex flex-col sm:flex-row gap-2 mt-4">
+                            <button onclick="return gtag_report_conversion('tel:+966533143974')" class="btn-primary flex-1 py-3 text-sm"><i class="fas fa-phone"></i> اتصال</button>
+                            <a href="https://wa.me/966533143974" target="_blank" class="btn-whatsapp flex-1 py-3 text-sm"><i class="fab fa-whatsapp"></i> واتساب</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. تركيب سباكة -->
+                <div id="service-4" class="service-card reveal">
+                    <img src="https://via.placeholder.com/400x200/D1C4E9/1E1E2F?text=تركيب+سباكة" alt="تركيب سباكة" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-3">🔧 تركيب سباكة</h3>
+                        <p class="text-gray-600 mb-4">تركيب جميع أعمال السباكة للمنازل والفلل: مواسير صرف، خلاطات، كبائن حمامات، سخانات بضمان.</p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-center gap-2"><i class="fas fa-check-circle text-primary"></i> تركيب مواسير</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check-circle text-primary"></i> تركيب خلاطات وكبائن</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check-circle text-primary"></i> ضمان على التركيب</li>
+                        </ul>
+                        <div class="flex flex-col sm:flex-row gap-2 mt-4">
+                            <button onclick="return gtag_report_conversion('tel:+966533143974')" class="btn-primary flex-1 py-3 text-sm"><i class="fas fa-phone"></i> اتصال</button>
+                            <a href="https://wa.me/966533143974" target="_blank" class="btn-whatsapp flex-1 py-3 text-sm"><i class="fab fa-whatsapp"></i> واتساب</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. كشف تسربات -->
+                <div id="service-5" class="service-card reveal">
+                    <img src="https://via.placeholder.com/400x200/BBDEFB/1E1E2F?text=كشف+تسربات" alt="كشف تسربات" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-3">🔍 كشف تسربات بدون تكسير</h3>
+                        <p class="text-gray-600 mb-4">أجهزة إلكترونية حديثة (صوتية، حرارية) لتحديد مواقع التسرب بدقة متناهية بدون تكسير، مع إصلاح فوري.</p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-center gap-2"><i class="fas fa-check-circle text-primary"></i> أجهزة إلكترونية</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check-circle text-primary"></i> تحديد دقيق بدون تكسير</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check-circle text-primary"></i> إصلاح فوري</li>
+                        </ul>
+                        <div class="flex flex-col sm:flex-row gap-2 mt-4">
+                            <button onclick="return gtag_report_conversion('tel:+966533143974')" class="btn-primary flex-1 py-3 text-sm"><i class="fas fa-phone"></i> اتصال</button>
+                            <a href="https://wa.me/966533143974" target="_blank" class="btn-whatsapp flex-1 py-3 text-sm"><i class="fab fa-whatsapp"></i> واتساب</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. فتح انسداد -->
+                <div id="service-6" class="service-card reveal">
+                    <img src="https://via.placeholder.com/400x200/F0F4C3/1E1E2F?text=فتح+انسداد" alt="فتح انسداد" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-3">🧹 فتح انسداد المجاري</h3>
+                        <p class="text-gray-600 mb-4">نتعامل مع جميع أنواع الانسدادات (مطابخ، حمامات، مجاري رئيسية) بآلات ضغط عالي وسلاكات كهربائية.</p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-center gap-2"><i class="fas fa-check-circle text-primary"></i> آلات ضغط عالي</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check-circle text-primary"></i> إزالة الدهون</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check-circle text-primary"></i> تنظيف كامل</li>
+                        </ul>
+                        <div class="flex flex-col sm:flex-row gap-2 mt-4">
+                            <button onclick="return gtag_report_conversion('tel:+966533143974')" class="btn-primary flex-1 py-3 text-sm"><i class="fas fa-phone"></i> اتصال</button>
+                            <a href="https://wa.me/966533143974" target="_blank" class="btn-whatsapp flex-1 py-3 text-sm"><i class="fab fa-whatsapp"></i> واتساب</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 7. طوارئ 24 ساعة -->
+                <div id="service-7" class="service-card reveal">
+                    <img src="https://via.placeholder.com/400x200/FFCCBC/1E1E2F?text=طوارئ+24+ساعة" alt="طوارئ 24 ساعة" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-3">🚨 طوارئ صرف صحي 24 ساعة</h3>
+                        <p class="text-gray-600 mb-4">فريق طوارئ يعمل 24 ساعة طوال الأسبوع. اتصل بنا فوراً لأي مشكلة طارئة، ونصل خلال 30 دقيقة.</p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-center gap-2"><i class="fas fa-check-circle text-primary"></i> استجابة فورية</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check-circle text-primary"></i> وصول 30 دقيقة</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check-circle text-primary"></i> جميع أيام الأسبوع</li>
+                        </ul>
+                        <div class="flex flex-col sm:flex-row gap-2 mt-4">
+                            <button onclick="return gtag_report_conversion('tel:+966533143974')" class="btn-primary flex-1 py-3 text-sm"><i class="fas fa-phone"></i> اتصال</button>
+                            <a href="https://wa.me/966533143974" target="_blank" class="btn-whatsapp flex-1 py-3 text-sm"><i class="fab fa-whatsapp"></i> واتساب</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 8. اتصل بفني -->
+                <div id="service-8" class="service-card reveal">
+                    <img src="https://via.placeholder.com/400x200/D7CCC8/1E1E2F?text=اتصل+بفني" alt="اتصل بفني" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-3">📞 اتصل بفني الآن</h3>
+                        <p class="text-gray-600 mb-4">تحتاج استشارة؟ فريق الفنيين جاهز للرد عليك، معاينة أولية مجانية وعرض سعر بدون التزام.</p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-center gap-2"><i class="fas fa-check-circle text-primary"></i> استشارات فورية</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check-circle text-primary"></i> معاينة مجانية</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check-circle text-primary"></i> عرض سعر بدون التزام</li>
+                        </ul>
+                        <div class="flex flex-col sm:flex-row gap-2 mt-4">
+                            <button onclick="return gtag_report_conversion('tel:+966533143974')" class="btn-primary flex-1 py-3 text-sm"><i class="fas fa-phone"></i> اتصال</button>
+                            <a href="https://wa.me/966533143974" target="_blank" class="btn-whatsapp flex-1 py-3 text-sm"><i class="fab fa-whatsapp"></i> واتساب</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- إحصائيات -->
+    <section class="py-12 bg-red-50">
+        <div class="container-custom">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="bg-white p-8 rounded-3xl text-center shadow-md reveal">
+                    <div class="text-4xl font-black text-primary">١٠+</div>
+                    <div class="text-gray-600">سنوات خبرة</div>
+                </div>
+                <div class="bg-white p-8 rounded-3xl text-center shadow-md reveal">
+                    <div class="text-4xl font-black text-primary">٣٠٠٠+</div>
+                    <div class="text-gray-600">عميل سعيد</div>
+                </div>
+                <div class="bg-white p-8 rounded-3xl text-center shadow-md reveal">
+                    <div class="text-4xl font-black text-primary">٩٧%</div>
+                    <div class="text-gray-600">رضا العملاء</div>
+                </div>
+                <div class="bg-white p-8 rounded-3xl text-center shadow-md reveal">
+                    <div class="text-4xl font-black text-primary">٣٠'</div>
+                    <div class="text-gray-600">متوسط الوصول</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- مميزاتنا -->
+    <section id="features" class="py-16">
+        <div class="container-custom">
+            <div class="text-center reveal">
+                <h2 class="section-title center">لماذا الأمثل هو الأفضل؟</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">ستة أسباب تجعلك تختارنا</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8 mt-12">
+                <div class="flex gap-4 p-6 bg-white rounded-2xl shadow-sm hover:shadow-md transition reveal">
+                    <div class="text-4xl text-primary">⚡</div>
+                    <div><h3 class="font-bold text-xl mb-2">استجابة فورية</h3><p class="text-gray-600">نصل خلال 30-60 دقيقة</p></div>
+                </div>
+                <div class="flex gap-4 p-6 bg-white rounded-2xl shadow-sm hover:shadow-md transition reveal">
+                    <div class="text-4xl text-primary">🛡️</div>
+                    <div><h3 class="font-bold text-xl mb-2">ضمان 30 يوم</h3><p class="text-gray-600">نضمن خدمتنا</p></div>
+                </div>
+                <div class="flex gap-4 p-6 bg-white rounded-2xl shadow-sm hover:shadow-md transition reveal">
+                    <div class="text-4xl text-primary">🔧</div>
+                    <div><h3 class="font-bold text-xl mb-2">أحدث الأجهزة</h3><p class="text-gray-600">كمبروسر ألماني</p></div>
+                </div>
+                <div class="flex gap-4 p-6 bg-white rounded-2xl shadow-sm hover:shadow-md transition reveal">
+                    <div class="text-4xl text-primary">🧼</div>
+                    <div><h3 class="font-bold text-xl mb-2">بدون تكسير</h3><p class="text-gray-600">لا فوضى ولا تكسير</p></div>
+                </div>
+                <div class="flex gap-4 p-6 bg-white rounded-2xl shadow-sm hover:shadow-md transition reveal">
+                    <div class="text-4xl text-primary">📜</div>
+                    <div><h3 class="font-bold text-xl mb-2">شهادة صحية</h3><p class="text-gray-600">لتنظيف الخزانات</p></div>
+                </div>
+                <div class="flex gap-4 p-6 bg-white rounded-2xl shadow-sm hover:shadow-md transition reveal">
+                    <div class="text-4xl text-primary">💰</div>
+                    <div><h3 class="font-bold text-xl mb-2">أسعار منافسة</h3><p class="text-gray-600">عرض سعر مجاني</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- المناطق التي نغطيها -->
+    <section class="py-16 bg-red-50/50">
+        <div class="container-custom">
+            <div class="text-center reveal">
+                <h2 class="section-title center">نغطي جميع أحياء الرياض</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">أينما كنت، نحن بجانبك</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12">
+                <div class="bg-white p-4 rounded-xl text-center shadow-sm"><i class="fas fa-map-marker-alt text-primary ml-1"></i> حي الملقا</div>
+                <div class="bg-white p-4 rounded-xl text-center shadow-sm"><i class="fas fa-map-marker-alt text-primary ml-1"></i> حي الياسمين</div>
+                <div class="bg-white p-4 rounded-xl text-center shadow-sm"><i class="fas fa-map-marker-alt text-primary ml-1"></i> حي الصحافة</div>
+                <div class="bg-white p-4 rounded-xl text-center shadow-sm"><i class="fas fa-map-marker-alt text-primary ml-1"></i> حي النرجس</div>
+                <div class="bg-white p-4 rounded-xl text-center shadow-sm"><i class="fas fa-map-marker-alt text-primary ml-1"></i> حي الرمال</div>
+                <div class="bg-white p-4 rounded-xl text-center shadow-sm"><i class="fas fa-map-marker-alt text-primary ml-1"></i> حي قرطبة</div>
+                <div class="bg-white p-4 rounded-xl text-center shadow-sm"><i class="fas fa-map-marker-alt text-primary ml-1"></i> حي النسيم</div>
+                <div class="bg-white p-4 rounded-xl text-center shadow-sm"><i class="fas fa-map-marker-alt text-primary ml-1"></i> حي العليا</div>
+            </div>
+            <p class="text-center mt-6 text-gray-600">... وأكثر من 20 حي آخر</p>
+        </div>
+    </section>
+
+    <!-- آراء العملاء -->
+    <section id="testimonials" class="py-16">
+        <div class="container-custom">
+            <div class="text-center reveal">
+                <h2 class="section-title center">ماذا قال عملاؤنا عن الأمثل؟</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">ثقتكم هي نجاحنا</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8 mt-12">
+                <div class="bg-white p-8 rounded-3xl shadow-md border border-gray-100 hover:shadow-xl transition reveal">
+                    <i class="fas fa-quote-right text-3xl text-primary mb-4"></i>
+                    <p class="text-gray-700 mb-6">"ما شاء الله، فكوا لي انسداد المجاري بسرعة وأسعارهم مناسبة. شغل نظيف وممتاز."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 bg-primary-light rounded-full flex items-center justify-center text-primary-dark font-bold">أ.ن</div>
+                        <div><p class="font-bold">أبو نايف</p><p class="text-sm text-gray-500">حي الصحافة</p></div>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-3xl shadow-md border border-gray-100 hover:shadow-xl transition reveal">
+                    <i class="fas fa-quote-right text-3xl text-primary mb-4"></i>
+                    <p class="text-gray-700 mb-6">"شفطوا البيارة بسرعة وتعاملهم راقي. أنصح بالتعامل معهم."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 bg-primary-light rounded-full flex items-center justify-center text-primary-dark font-bold">س.ع</div>
+                        <div><p class="font-bold">سعود العتيبي</p><p class="text-sm text-gray-500">حي الياسمين</p></div>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-3xl shadow-md border border-gray-100 hover:shadow-xl transition reveal">
+                    <i class="fas fa-quote-right text-3xl text-primary mb-4"></i>
+                    <p class="text-gray-700 mb-6">"نظفوا الخزان الأرضي وأعطوني شهادة صحية. من أفضل الشركات في الرياض."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 bg-primary-light rounded-full flex items-center justify-center text-primary-dark font-bold">أ.ف</div>
+                        <div><p class="font-bold">أم فيصل</p><p class="text-sm text-gray-500">حي النرجس</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- الأسئلة الشائعة -->
+    <section class="py-16 bg-red-50/30">
+        <div class="container-custom">
+            <div class="text-center reveal">
+                <h2 class="section-title center">الأسئلة الشائعة</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">نجيب على أكثر الأسئلة التي تهمك</p>
+            </div>
+            <div class="max-w-3xl mx-auto mt-12 space-y-4">
+                <div class="bg-white p-6 rounded-2xl shadow-sm reveal">
+                    <h3 class="font-bold text-xl mb-2">كم تكلفة تسليك المجاري بالرياض؟</h3>
+                    <p class="text-gray-600">أسعارنا تنافسية وتبدأ من 150 ريال حسب حجم العمل. اتصل على 0533143974 نعطيك عرض سعر مجاني.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm reveal">
+                    <h3 class="font-bold text-xl mb-2">ما هي أفضل شركة تسليك مجاري؟</h3>
+                    <p class="text-gray-600">الأمثل هي الشركة الرائدة في استخدام تقنية الضغط العالي (الكمبروسر) بدون تكسير، مع ضمان 30 يوم وخدمة 24 ساعة.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm reveal">
+                    <h3 class="font-bold text-xl mb-2">كم وقت وصولكم للعميل؟</h3>
+                    <p class="text-gray-600">نوصلك خلال 30-60 دقيقة من اتصالك، في أي منطقة بالرياض (شمال، جنوب، شرق، غرب).</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm reveal">
+                    <h3 class="font-bold text-xl mb-2">هل تنظيف الخزانات آمن؟</h3>
+                    <p class="text-gray-600">نعم، نستخدم مواد معتمدة من وزارة الصحة ونعطي شهادة صحية بعد التنظيف.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم حجز الخدمة -->
+    <section id="booking" class="py-16">
+        <div class="container-custom">
+            <div class="bg-gradient-to-r from-primary to-primary-dark rounded-3xl p-10 text-white text-center reveal">
+                <h2 class="text-3xl md:text-4xl font-black mb-4">📅 احجز خدمتك الآن</h2>
+                <p class="text-xl text-white/80 max-w-2xl mx-auto mb-6">اتصل بنا أو واتساب، وفريقنا يتوجه لك فوراً. معاينة مجانية وعرض سعر بدون التزام.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button onclick="return gtag_report_conversion('tel:+966533143974')" class="bg-white text-primary text-xl px-8 py-4 rounded-full font-bold shadow-xl hover:scale-105 transition flex items-center gap-3">
+                        <i class="fas fa-phone"></i> 0533143974
+                    </button>
+                    <a href="https://wa.me/966533143974" target="_blank" class="bg-green-500 text-white text-xl px-8 py-4 rounded-full font-bold shadow-xl hover:scale-105 transition flex items-center gap-3">
+                        <i class="fab fa-whatsapp"></i> واتساب
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA النهائي -->
+    <section id="contact" class="py-20 bg-gradient-to-r from-primary to-primary-dark text-white text-center">
+        <div class="container-custom">
+            <h2 class="text-4xl md:text-5xl font-black mb-4">📞 جاهز نخدمك؟</h2>
+            <p class="text-xl text-white/80 max-w-2xl mx-auto mb-8">اتصل بينا الحين وفريق الأمثل يتوجه لك فوراً</p>
+            <button onclick="return gtag_report_conversion('tel:+966533143974')" class="bg-white text-primary text-2xl px-12 py-5 rounded-full font-bold shadow-xl hover:scale-105 transition flex items-center gap-3 mx-auto">
+                <i class="fas fa-phone"></i> 0533143974
+            </button>
+            <p class="mt-4 text-white/70">متوفرين 24 ساعة، 7 أيام</p>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container-custom">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="logo text-3xl mb-4">الأمثل</h3>
+                    <p class="text-gray-400">خدمات الصرف الصحي والسباكة المتكاملة بالرياض</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">روابط سريعة</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#home" class="hover:text-white">الرئيسية</a></li>
+                        <li><a href="#services" class="hover:text-white">الخدمات</a></li>
+                        <li><a href="#features" class="hover:text-white">المميزات</a></li>
+                        <li><a href="#contact" class="hover:text-white">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">خدماتنا</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#service-1" class="hover:text-white">تسليك مجاري</a></li>
+                        <li><a href="#service-2" class="hover:text-white">شفط بيارات</a></li>
+                        <li><a href="#service-3" class="hover:text-white">تنظيف خزانات</a></li>
+                        <li><a href="#service-4" class="hover:text-white">تركيب سباكة</a></li>
+                        <li><a href="#service-5" class="hover:text-white">كشف تسربات</a></li>
+                        <li><a href="#service-6" class="hover:text-white">فتح انسداد</a></li>
+                        <li><a href="#service-7" class="hover:text-white">طوارئ 24 ساعة</a></li>
+                        <li><a href="#service-8" class="hover:text-white">اتصل بفني</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">اتصل بنا</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="tel:+966533143974" onclick="return gtag_report_conversion('tel:+966533143974')" class="hover:text-white"><i class="fas fa-phone ml-2 text-primary"></i> 0533143974</a></li>
+                        <li><i class="fab fa-whatsapp ml-2 text-green-500"></i> واتساب: 0533143974</li>
+                        <li><i class="fas fa-map-marker-alt ml-2 text-primary"></i> الرياض</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>جميع الحقوق محفوظة &copy; <span id="copyright-year"></span> الأمثل | تصميم وبرمجة احترافية</p>
+            </div>
+        </div>
     </footer>
+
+    <script>
+        document.getElementById('copyright-year').textContent = new Date().getFullYear();
+
+        // Reveal on scroll
+        const reveals = document.querySelectorAll('.reveal');
+        function revealCheck() {
+            reveals.forEach(el => {
+                const windowHeight = window.innerHeight;
+                const elementTop = el.getBoundingClientRect().top;
+                if (elementTop < windowHeight - 80) el.classList.add('active');
+            });
+        }
+        window.addEventListener('scroll', revealCheck);
+        revealCheck();
+    </script>
 </body>
 </html>
