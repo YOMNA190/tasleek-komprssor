@@ -10,31 +10,30 @@
     <meta name="keywords" content="تسليك مجاري بالرياض, شفط بيارات بالكمبروسر, تنظيف خزانات, تركيب سباكة, كشف تسربات, فتح انسداد, شركة تسليك مجاري, الأمثل">
     <meta name="author" content="الأمثل">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://example.com"> <!-- استبدلي بالرابط النهائي -->
+    <link rel="canonical" href="https://example.com">
 
-    <!-- Google tag (gtag.js) - مثال للتتبع (استبدلي بالمعرف الخاص بك) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-XXXXXXXXXX"></script>
+    <!-- ========== Google tag (gtag.js) - تم تحديثه بالمعرف الصحيح ========== -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18066720765"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'AW-XXXXXXXXXX');
+      gtag('config', 'AW-18066720765');
     </script>
 
-    <!-- Event snippet للاتصال -->
+    <!-- دالة تتبع تحويل بسيطة (متوافقة مع الحساب الجديد، بدون الحاجة لمعرف حدث) -->
     <script>
     function gtag_report_conversion(url) {
-      var callback = function () {
-        if (typeof(url) != 'undefined') {
-          window.location = url;
-        }
-      };
-      gtag('event', 'conversion', {
-          'send_to': 'AW-XXXXXXXXXX/XXXXXXXXXX', // استبدلي
-          'value': 1.0,
-          'currency': 'SAR',
-          'event_callback': callback
+      // تسجيل حدث مخصص للنقر مع رابط الهاتف أو الواتساب
+      gtag('event', 'click', {
+        'event_category': 'contact',
+        'event_label': url,
+        'send_to': 'AW-18066720765'
       });
+      // فتح الرابط (رقم الهاتف أو URL)
+      if (typeof(url) != 'undefined') {
+        window.location = url;
+      }
       return false;
     }
     </script>
@@ -42,7 +41,7 @@
     <!-- Open Graph -->
     <meta property="og:title" content="الأمثل - خدمات الصرف الصحي المتكاملة بالرياض">
     <meta property="og:description" content="تسليك مجاري، شفط بيارات، تنظيف خزانات، تركيب سباكة، كشف تسربات بأحدث تقنيات الكمبروسر. اتصل بنا 0533143974.">
-    <meta property="og:image" content="https://example.com/assets/images/og-image.jpg"> <!-- استبدلي -->
+    <meta property="og:image" content="https://example.com/assets/images/og-image.jpg">
     <meta property="og:url" content="https://example.com">
     <meta property="og:type" content="website">
     
@@ -73,10 +72,10 @@
     
     <style>
         :root {
-            --primary: #D32F2F;      /* أحمر قوي */
+            --primary: #D32F2F;
             --primary-light: #FFCDD2;
             --primary-dark: #B71C1C;
-            --accent: #FFA000;        /* ذهبي داكن */
+            --accent: #FFA000;
             --bg-light: #F5F5F6;
             --text-dark: #1E1E2F;
             --text-gray: #5F5F6B;
